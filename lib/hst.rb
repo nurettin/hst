@@ -63,7 +63,7 @@ module Hst
       @f.close
     end
 
-    def write(t, o, h, l, c, v, s, rv)
+    def write(t, o, h, l, c, v, s = nil, rv = nil)
       @f.write [t.to_i, o, h, l, c, v, s, rv].pack(@packet_format)
     end
   end
