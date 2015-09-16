@@ -37,3 +37,4 @@ class HstTest < Minitest::Test
     File.delete('test.hst')
   end
 end
+
